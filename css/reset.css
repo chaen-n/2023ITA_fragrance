@@ -1,0 +1,34 @@
+@font-face{font-family:'NanumSquare';src:url(/font/NanumSquareR.eot);src:url(/font/NanumSquareR.eot?#iefix) format('embedded-opentype'), url(/font/NanumSquareR.woff) format('woff'), url(/font/NanumSquareR.ttf) format('truetype');}
+@font-face{font-family:'NanumSquareB';src:url(/font/NanumSquareB.eot);src: url(/font/NanumSquareB.eot?#iefix) format('embedded-opentype'), url(/font/NanumSquareB.woff2) format('woff2'), url(/font//NanumSquareB.woff) format('woff'), url(/font/NanumSquareB.ttf) format('truetype');}
+@font-face{font-family:'NanumSquareEB';src:url(/font/NanumSquareEB.eot);src: url(/font/NanumSquareEB.eot?#iefix) format('embedded-opentype'), url(/font//NanumSquareEB.woff) format('woff'), url(/font/NanumSquareEB.ttf) format('truetype');}
+
+@font-face{font-family:'notokr';src:url('/font/notokr-regular.eot');src:url('/font/notokr-regular.eot?#iefix') format('embedded-opentype'),url('/font/notokr-regular.ttf') format('truetype'),url('/font/notokr-regular.svg#notokr-regular') format('svg');font-weight:400;font-style:normal}
+@font-face{font-family:'notokr';src:url('/font/notokr-medium.eot');src:url('/font/notokr-medium.eot?#iefix') format('embedded-opentype'),url('/font/notokr-medium.ttf') format('truetype'),url('/font/notokr-medium.svg#notokr-medium') format('svg');font-weight:500;font-style:normal}
+@font-face{font-family:'notokr';src:url('/font/notokr-bold.eot');src:url('/font/notokr-bold.eot?#iefix') format('embedded-opentype'),url('/font/notokr-bold.ttf') format('truetype'), url('/font/notokr-bold.svg#notokr-bold') format('svg');font-weight:600;font-style:normal}
+
+
+*{margin:0;padding:0;border:0;-webkit-box-sizing:border-box;box-sizing:border-box}
+article, aside, details, pigcaption, figure, footer, header, hgroup, menu, nav, section{display:block;}
+.blind,legend,caption{display:block;overflow:hidden;position:absolute;top:0;left:-1000em;}
+hr{display:none;}
+ul, ol, dl{list-style:none;margin:0;}
+a{text-decoration:none; color:#333;transition:all 0.3s ease;line-height:1.1;}
+button{transition:all 0.3s ease;line-height:1.1;}
+table{border-collapse:collapse; border-spacing:0;}
+lable{cursor:pointer;}
+i,em,address{font-style:normal;font-weight:normal;}
+input, select, button, textarea{vertical-align:middle;outline:none;}
+html, body{width:100%;height:auto;padding:0;margin:0;font-weight:normal;color:#333;}
+body,th,td,input,select,textarea,button{font-family:'notokr', notokr, '나눔고딕', NanumGothic,'맑은고딕',Malgun Gothic,'Open Sans',Open Sans, "애플 SD 산돌고딕 Neo","Apple SD Gothic Neo"}
+
+h1, h2{font-family:NanumSquareEB}
+h3, h4, h5, h6{font-family:NanumSquareB}
+h1, h2, h3, h4, h5, h6{color:#333}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{color:#333}
+h2{font-size:24px;}
+h3{font-size:18px;}
+
+#dvLoading{background:#fff url(/images/loader.gif) no-repeat center center;height:100px;width:100px;position:fixed;z-index:9000;left:50%;top:50vh;margin:-25px 0 0 -25px;display:none;opacity:2.0}
+input[type="date"]::-webkit-clear-button,
+input[type="date"]::-webkit-inner-spin-button {display: none;} 
+input[type="date"]::-webkit-calendar-picker-indicator {background: transparent;z-index: 1;} 

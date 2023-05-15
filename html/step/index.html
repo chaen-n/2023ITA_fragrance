@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="google" content="notranslate">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link href="/css/reset.css" rel="stylesheet" type="text/css">
+<link href="/css/ita.css" rel="stylesheet" type="text/css">
+
+<meta charset="utf-8">
+<title>WMC 아카데미</title>
+</head>
+<body>
+	<header>
+		<div class="headerIn">
+			<h1><a href="/"><span class="wmc">WMC</span> 아카데미</a></h1>
+			<nav>
+				<a href="#" class="navMenu" id="data">자료실</a>
+				<a href="#" class="navMenu on" id="frag">시온의향기</a>
+				<a href="#" class="navMenu" id="message">전달사항</a>
+				<a href="#" class="navMenu" id="news">공지사항</a>
+			</nav>
+			<div class="headerBtn">
+				<span class="name">김시온님</span> 
+				<button class="btnLogout" onclick="location.href='/logout.html'" >로그아웃</button>		
+			</div>
+		</div>
+	</header>
+	<main class="listWrap">
+		<div class="listTitle">
+			<h3>시온의 향기</h3>
+			<div class="category">
+				<button class="btnCategory on" id="all">
+					전체<em class="cnt" id="allCount"></em>
+				</button>
+				<button class="btnCategory" id="fr">
+					시온의향기<em class="cnt" id="frCount"></em>
+				</button>
+				<button class="btnCategory" id="new">
+					새 가족 이야기<em class="cnt" id="newCount"></em>
+				</button>
+				<button class="btnCategory" id="overseas">
+					해외복음 향기<em class="cnt" id="overseasCount"></em>
+				</button>
+				<button class="btnCategory" id="story">
+					동화<em class="cnt" id="storyCount"></em>
+				</button>
+			</div>
+		</div>
+		<div class="searchArea">
+			<input type="text" id="keyword" class="inputSearch" placeholder="제목, 작성자이름으로 검색">
+		</div>
+
+		<div class="listTableWrap">
+			<table class="listTable" id="listTable">
+				<thead>
+					<tr>
+						<th>번호</th>
+						<th>제목</th>
+						<th>국가</th>
+						<th>이름</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="recomm">
+						<td class="num"><span class="rec">추천</span></td>
+						<td class="kinds" data-kinds="overseas">해외복음 향기</td>
+						<td class="project">아프리카
+								현지어로 하나님께 찬송을</td>
+						<td class="nation">베트남</td>
+						<td class="name"><a href="">김사랑</a></td>
+					</tr>
+					<tr class="recomm">
+						<td class="num"><span class="rec">추천</span></td>
+						<td class="kinds" data-kinds="new">새 가족 이야기</td>
+						<td class="project">하나님께서 늘 사랑을 주신
+								것처럼 주는 사랑이 받는 사랑보다 더 복이 있습니다.</td>
+						<td class="nation">중국</td>
+						<td class="name"><a href="">이기쁨</a></td>
+					</tr>
+					<tr class="recomm">
+						<td class="num"><span class="rec">추천</span></td>
+						<td class="kinds" data-kinds="overseas">해외복음 향기</td>
+						<td class="project">하나님께 영광을 돌리면 그
+								영광은 결국 자신의 것이 됩니다.</td>
+						<td class="nation">한국,서울</td>
+						<td class="name"><a href="">한소망</a></td>
+					</tr>
+					<tr>
+						<td class="num">74</td>
+						<td class="kinds" data-kinds="overseas">해외복음 향기</td>
+						<td class="project">아름답게 보는 마음은 미움이
+								없고 온전한 사랑을 이루게 합니다.</td>
+						<td class="nation">한국,성남</td>
+						<td class="name"><a href="">나에스더</a></td>
+					</tr>
+					<tr>
+						<td class="num">73</td>
+						<td class="kinds" data-kinds="new">새 가족 이야기</td>
+						<td class="project">아브라함이 조카 롯에게 좋은
+								것을 양보했을 때 더 좋은 것으로 축복을 받았듯이</td>
+						<td class="nation">필리핀</td>
+						<td class="name"><a href="">이천국</a></td>
+					</tr>
+					<tr>
+						<td class="num">72</td>
+						<td class="kinds" data-kinds="overseas">해외복음 향기</td>
+						<td class="project">우리들도 형제들에게 좋은 것을
+								양보하면 더 좋은 축복을 받게 됩니다.</td>
+						<td class="nation">몽골</td>
+						<td class="name"><a href="">조행복</a></td>
+					</tr>
+					<tr>
+						<td class="num">71</td>
+						<td class="kinds" data-kinds="fr">시온의 향기</td>
+						<td class="project">높은 마음이란 섭섭하게 느끼는
+								마음입니다.</td>
+						<td class="nation">아프리카</td>
+						<td class="name"><a href="">오시온</a></td>
+					</tr>
+					<tr>
+						<td class="num">70</td>
+						<td class="kinds" data-kinds="overseas">해외복음 향기</td>
+						<td class="project">다른 사람들이 일하지 않는다고
+								불평하지 말고 자신의 할 일에만 충성되게 합시다.</td>
+						<td class="nation">미국</td>
+						<td class="name"><a href="">홍다니엘</a></td>
+					</tr>
+					<tr>
+						<td class="num">69</td>
+						<td class="kinds" data-kinds="overseas">해외복음 향기</td>
+						<td class="project">주인된 마음으로 일하면 힘들지
+								않고 즐거운 마음으로 일할 수 있습니다.</td>
+						<td class="nation">한국,성남</td>
+						<td class="name"><a href="">박열매</a></td>
+					</tr>
+					<tr>
+						<td class="num">68</td>
+						<td class="kinds" data-kinds="overseas">해외복음 향기</td>
+						<td class="project">불만이 가득차면 교만이
+								생깁니다. 늘 감사하는 마음으로 하나님을 섬기면 불만과 교만이 없어지고 겸손한 마음을</td>
+						<td class="nation">한국,안양</td>
+						<td class="name"><a href="">김다윗</a></td>
+					</tr>
+					<tr>
+						<td class="num">67</td>
+						<td class="kinds" data-kinds="overseas">해외복음 향기</td>
+						<td class="project">형제 자매를 칭찬하면 내게
+								칭찬이 돌아옵니다.</td>
+						<td class="nation">미국</td>
+						<td class="name"><a href="">권일꾼</a></td>
+					</tr>
+					<tr>
+						<td class="num">66</td>
+						<td class="kinds" data-kinds="fr">시온의 향기</td>
+						<td class="project">바다가 모든 더러운 것을 받아
+								정화시키듯이 모든 형제자매들의 허물까지도 감싸줄 수 있는 바다같이 넓은 마음이</td>
+						<td class="nation">베트남</td>
+						<td class="name"><a href="">김세상</a></td>
+					</tr>
+					<tr>
+						<td class="num">65</td>
+						<td class="kinds" data-kinds="fr">시온의 향기</td>
+						<td class="project">어린 양의 인도를 받기를
+								원하는 사람은 어린 양보다 더 작은 양이 되어야 합니다.</td>
+						<td class="nation">모잠비크</td>
+						<td class="name"><a href="">오연합</a></td>
+					</tr>
+					<tr>
+						<td class="num">64</td>
+						<td class="kinds" data-kinds="overseas">해외복음 향기</td>
+						<td class="project">희생은 큰그릇이 되기 위해
+								요구되는 과정입니다.</td>
+						<td class="nation">말레이시아</td>
+						<td class="name"><a href="">참화합</a></td>
+					</tr>
+					<tr>
+						<td class="num">63</td>
+						<td class="kinds" data-kinds="new">새 가족 이야기</td>
+						<td class="project">오늘의 고통을 참고
+								인내해야함은 하늘나라가 내게 있기 때문입니다.</td>
+						<td class="nation">스페인</td>
+						<td class="name"><a href="">박믿음</a></td>
+					</tr>
+					<tr>
+						<td class="num">62</td>
+						<td class="kinds" data-kinds="overseas">해외복음 향기</td>
+						<td class="project" id="goPage">하나님은 섬기러 이 땅에
+								오셨습니다. 섬김 받기를 원하지 않고 서로 섬기는 마음이 진정 아름다운 마음입니다.</td>
+						<td class="nation">멕시코</td>
+						<td class="name"><a href="">김사랑</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="paginate">
+			<a href="#" class="pre"></a> <strong>1</strong> <a href="#">2</a> <a
+				href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#"
+				class="next">></a>
+		</div>
+
+		<div class="listBtn">
+			<a class="btnWrite" id="goWrite">글쓰기</a>
+		</div>
+	</main>
+
+	<form id="commonForm" name="commonForm"></form>
+	<footer>
+		<div class="in">
+			<div class="copy">© World Mission Society Church of God. <span>모든 권리 보유</span></div>
+			<div class="btnR">
+				<select class="familySel">
+					<option>관련사이트</option>
+				</select>
+			</div>
+		</div>
+	</footer>
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+	init();
+	eventSetting();
+})
+
+function init(){
+	setCount();
+}
+
+function eventSetting(){
+	let projects = document.querySelectorAll(".project");
+	projects.forEach(project => {
+		project.addEventListener('click', () => {
+			location.href="./content.html";
+		});
+	});
+
+	let categorys = document.querySelectorAll(".btnCategory");
+	categorys.forEach(button => {
+		button.addEventListener('click', function() {
+    		categorys.forEach(element => {
+      			element.classList.remove('on');
+    		});
+			filter(button.id);
+  		});
+	});
+
+	document.getElementById("goWrite").addEventListener("click", () => {
+		location.href="./write.html";
+	});
+
+	document.getElementById("keyword").addEventListener("keyup", (e) => {
+		if(document.getElementById("keyword").value == 0){
+			search("");
+			return;
+		}
+		if(e.keyCode == 13){
+			search(document.getElementById("keyword").value);
+		};
+	});
+}
+function setCount(){
+	document.getElementById("allCount").innerHTML = " " + document.querySelectorAll("#listTable tbody tr").length;
+	document.getElementById("frCount").innerHTML = " " + document.querySelectorAll("#listTable tbody tr td.kinds[data-kinds='fr']").length;
+	document.getElementById("newCount").innerHTML = " " + document.querySelectorAll("#listTable tbody tr td.kinds[data-kinds='new']").length;
+	document.getElementById("overseasCount").innerHTML = " " + document.querySelectorAll("#listTable tbody tr td.kinds[data-kinds='overseas']").length;
+	document.getElementById("storyCount").innerHTML = " " + document.querySelectorAll("#listTable tbody tr td.kinds[data-kinds='story']").length;
+}
+function filter(value){
+	document.getElementById(value).classList.add("on");
+
+	let cells = document.querySelectorAll("td[data-kinds]");
+	let rows = new Set();
+
+	cells.forEach((cell) => {
+		rows.add(cell.parentNode);
+		cell.parentNode.style.display = "none";
+	})
+
+	if(value == "all"){
+		rows.forEach((row) => {
+			row.style.display = "";
+		});
+	} else{
+		let filteredRows = document.querySelectorAll(`td[data-kinds="${value}"]`);
+
+		rows.forEach((row) =>{
+			row.style.display = "none";
+		});
+
+		filteredRows.forEach((cell) => {
+			cell.parentNode.style.display = "";
+		});
+	}
+
+	if(document.getElementById("keyword").value != "") search(document.getElementById("keyword").value);
+}
+
+function search(value){
+	let rows = document.querySelectorAll("tr:not([style='display: none;'])");
+	if(value == ""){
+		document.querySelectorAll("tr").forEach((row) => {
+			row.style.display = "";
+		})
+		return;
+	}
+
+	rows.forEach((row) => {
+		let columns = row.querySelectorAll("td.name, td.project");
+		let rowContainsValue = false;
+		columns.forEach((column) => {
+			if(column.textContent.indexOf(value) > -1){
+				rowContainsValue = true;
+			}
+		});
+		if(!rowContainsValue){
+			row.style.display = "none";
+		}
+	});
+}
+</script>
+</html>
